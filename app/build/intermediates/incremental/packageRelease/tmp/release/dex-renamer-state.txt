@@ -1,0 +1,4 @@
+#Tue Aug 28 13:51:53 BRT 2018
+base.0=C\:\\MyVanClient\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

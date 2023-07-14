@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="myvan.myvanclient.Cadastrar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/txtVan"
+            android:hint="*Numero do Transporte"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="*Nome completo"
+            android:textSize="20dp"
+            android:layout_alignRight="@+id/txtEnd1"
+            android:layout_alignEnd="@+id/txtEnd1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtEmail"
+            android:textSize="20dp"
+            android:hint="*E-mail"
+            />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtName"
+            android:layout_marginTop="7dp"
+            android:layout_weight="0.23"
+            android:hint="*Senha"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEnd1"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="*End de ida 1"
+            android:layout_weight="0.30" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNum1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="*Numero de ida 1"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:layout_below="@+id/txtEnd1"
+            android:layout_marginTop="7dp"
+            android:layout_alignRight="@+id/txtEnd1"
+            android:layout_alignEnd="@+id/txtEnd1"
+            android:layout_weight="0.22" />
+
+        <EditText
+            android:id="@+id/txtCid1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtEnd2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/txtEnd2"
+            android:layout_below="@+id/txtNum1"
+            android:layout_weight="0.21"
+            android:hint="*Cidade 1"
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtEnd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtNum3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/txtEnd1"
+            android:hint="*End de volta 1"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:layout_weight="0.20" />
+
+        <EditText
+            android:id="@+id/txtNum3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtEnd3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/txtEnd3"
+
+            android:layout_alignTop="@+id/txtNum1"
+            android:layout_weight="0.19"
+            android:hint="*Numero de volta 1"
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtCid3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtNum3"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/txtCid1"
+            android:layout_toRightOf="@+id/txtCid1"
+            android:layout_weight="0.16"
+            android:hint="*Cidade 1"
+
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtEnd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtCid1"
+            android:layout_marginTop="7dp"
+            android:layout_weight="0.18"
+            android:hint="End de ida 2"
+            android:inputType="textPersonName"
+            android:textColorHint="#B22222"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtEnd2"
+            android:layout_marginTop="7dp"
+            android:layout_weight="0.17"
+            android:hint="Numero de ida 2"
+            android:inputType="textPersonName"
+            android:textColorHint="#B22222"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtCid2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtNum2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/txtNum2"
+            android:layout_below="@+id/txtNum2"
+            android:layout_marginTop="7dp"
+            android:hint="Cidade 2"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:textColorHint="#B22222"
+            android:layout_weight="0.16" />
+
+        <EditText
+            android:id="@+id/txtEnd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txtEnd2"
+            android:layout_toEndOf="@+id/txtEnd2"
+            android:layout_toRightOf="@+id/txtEnd2"
+            android:hint="End de volta 2"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:textColorHint="#B22222"
+            android:layout_weight="0.15" />
+
+        <EditText
+            android:id="@+id/txtNum4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtEnd4"
+            android:layout_alignLeft="@+id/txtEnd4"
+            android:layout_alignRight="@+id/txtEnd4"
+            android:layout_alignStart="@+id/txtEnd4"
+            android:layout_alignTop="@+id/txtNum2"
+            android:hint="Numero de volta 2"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:textColorHint="#B22222"
+            android:layout_weight="0.15" />
+
+        <EditText
+            android:id="@+id/txtCid4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtNum4"
+            android:layout_alignLeft="@+id/txtNum4"
+            android:layout_alignRight="@+id/txtNum4"
+            android:layout_alignStart="@+id/txtNum4"
+            android:layout_below="@+id/txtNum4"
+            android:layout_marginTop="7dp"
+            android:hint="Cidade 2"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:textColorHint="#B22222"
+            android:layout_weight="0.15" />
+
+        <EditText
+            android:id="@+id/txtTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtCid4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/txtCid4"
+            android:layout_below="@+id/txtCid2"
+            android:layout_marginTop="7dp"
+            android:layout_weight="0.15"
+
+            android:hint="Celular do Passageiro"
+            android:textColorHint="#B22222"
+            android:textSize="20dp" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:id="@+id/btnCadastrar"
+            android:onClick="UserReg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/txtPassUser"
+            android:layout_toEndOf="@+id/txtPassUser"
+            android:layout_alignTop="@+id/txtLoginUser"
+            android:layout_weight="0.18" />
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

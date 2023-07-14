@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">374679332533-3n7vpqqvj3cdobisrp453n6c8fat2u30.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://myvan-859df.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">374679332533</string>
+    <string name="google_api_key" translatable="false">AIzaSyA8ha0hQHzX4CuU05TrGAIU47LSkN5yFgc</string>
+    <string name="google_app_id" translatable="false">1:374679332533:android:03424a12a5e990ea</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA8ha0hQHzX4CuU05TrGAIU47LSkN5yFgc</string>
+    <string name="google_storage_bucket" translatable="false">myvan-859df.appspot.com</string>
+    <string name="project_id" translatable="false">myvan-859df</string>
+</resources>

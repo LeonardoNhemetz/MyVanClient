@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="myvan.myvanclient.Rastreio.RastreioMaps"
+        android:layout_above="@+id/adBannerRastreioMaps" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adBannerRastreioMaps"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7204661155560964/5862055218"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

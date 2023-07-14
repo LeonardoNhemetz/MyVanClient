@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="myvan.myvanclient.ActivityPrincipal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelIr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ir:"
+            android:id="@+id/textView4"
+            android:padding="7dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:id="@+id/rgIr">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"
+                android:textSize="16sp"
+                android:id="@+id/rbIrSim"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não"
+                android:textSize="16sp"
+                android:id="@+id/rbIrNao"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_End"
+            android:layout_toRightOf="@id/rgIr"
+
+            android:layout_marginLeft="25dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:id="@+id/rbIrAtivo1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+
+                android:id="@+id/rbIrAtivo3"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/RelVoltar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView5"
+
+            android:text="Voltar:"
+
+
+
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_alignTop="@+id/textView5"
+            android:id="@+id/rgVoltar"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"
+                android:textSize="16sp"
+
+                android:id="@+id/rbVoltarSim"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não"
+                android:textSize="16sp"
+                android:id="@+id/rbVoltarNao"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_End2"
+            android:layout_toRightOf="@id/rgVoltar">
+
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:id="@+id/rbVoltarAtivo2"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rbVoltarAtivo4"
+            >
+
+
+
+        </RadioButton>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/btnEnviar"
+        android:onClick="Onclick"
+        android:background="@drawable/enter_button"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp" />
+
+
+
+    <include layout="@layout/content_lv1"
+        android:id="@+id/include"
+        android:layout_width="180dp"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/RelVoltar" />
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adBannerPrincipal"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7204661155560964/5862055218"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Rastrear Van"
+        android:id="@+id/btnRastr"
+        android:onClick="Rastr"
+        android:background="@drawable/enter_button"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_below="@+id/btnEnviar"
+        android:layout_marginTop="18dp"
+        android:layout_alignLeft="@+id/btnEnviar"
+        android:layout_alignStart="@+id/btnEnviar"
+        android:layout_alignRight="@+id/btnEnviar"
+        android:layout_alignEnd="@+id/btnEnviar" />
+
+
+
+</RelativeLayout>

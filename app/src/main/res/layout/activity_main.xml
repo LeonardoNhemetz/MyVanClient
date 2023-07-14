@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true" android:focusableInTouchMode="true"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="myvan.myvanclient.Main">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="35dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/white_retangle"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login:"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/txtTable"
+                android:hint="Van"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_directions_bus"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:inputType="text"/>
+
+            <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/txtLogin"
+            android:hint="Login"
+            android:inputType="textAutoComplete"
+            android:background="@drawable/rounded_white"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_face"
+            android:textSize="18dp"
+            android:drawablePadding="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/txtPassword"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_lock_outline"
+                android:textSize="18dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Entrar"
+                android:background="@drawable/enter_button"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:id="@+id/btnLogin"
+                android:onClick="Onlogin"
+                android:focusable="true"
+                />
+
+            <Button
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cadastrar"
+                android:background="@drawable/enter_button"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:id="@+id/btnCadastrar"
+                android:onClick="OnCad"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adBannerMain"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7204661155560964/5862055218"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

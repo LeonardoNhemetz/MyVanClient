@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Jan 24 17:03:32 BRST 2018
+0.baseType=DIRECTORY
+0.base=C\:\\MyVanClient\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\94
+0.path=classes.dex
+0.set=DEX
+count=1
